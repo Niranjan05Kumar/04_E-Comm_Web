@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Category Page</title>
+    <link rel="stylesheet" href="product_category.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=instant_mix" />
+</head>
+<body>
+    <!-- Navbar start -->
+    <div class="navbar-box">
+        <nav class="navbar">
+
+            <div class="navsidebar">
+                <a href="#"  onclick=hideSidebar() class="hide-menu"> &#x2715;</a>
+                <a href="#" class="shop-arw">Shop <i class='bx bxs-chevron-right'></i>
+                </a>
+                <a href="#"> On Sale</a>
+                <a href="#"> New Arrivals</a>
+                <a href="#"> Brands</a>
+            </div>
+           
+            <div class="show-menu" onclick=showSidebar()>
+                <a href="#">&#9776;</a>
+            </div>
+    
+            <div class="shopco">
+                <a href="#">SHOP.CO</a>
+            </div>
+    
+            <div class="navlist">
+                <a href="#" class="hidenavlist">Shop <i class='bx bxs-chevron-down'></i>
+                </a>
+                <a href="#" class="hidenavlist"> On Sale</a>
+                <a href="#" class="hidenavlist"> New Arrivals</a>
+                <a href="#" class="hidenavlist"> Brands</a>
+            </div>
+    
+            <div class="navsearch">
+                <input type="text" placeholder="Search for products..." >
+                <i class='bx bx-search'></i>
+            </div>
+    
+            <div class="navicons">
+                <i class='bx bx-search'></i>
+                <a href="#"> <i class='bx bx-cart' ></i> </a>
+                <a href="#"> <i class='bx bx-user-circle' ></i> </a>
+            </div>
+    
+        </nav>
+     </div>
+    <!-- Navbar End -->
+
+    <!-- Path start -->
+    <div class="path-box">
+        <div class="path-container">
+            <div class="path-list">
+                <p>Home <i class='bx bx-chevron-right'></i></p>
+                <p>Casual</p>
+            </div>
+        </div>
+     </div>
+    <!-- Path End -->
+
+
+    <!-- category casual section start -->
+    <div class="category-box">
+        <div class="category-container">
+
+            <div class="category-title">
+                <h2>Casual</h2>
+                <div class="right-category-title">
+                    <p> Showing 1-8 of 100 Products</p>
+                    <button>
+                        <span class="material-symbols-outlined" onclick="showfilter()">
+                            instant_mix
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="category-grid">
+                <div class="category-card">
+                    <img loading="lazy" src="/Images/Gradient Graphic T-shirt.png">
+                    <h3> Gradient Graphic T-shirt</h3>
+                    <p>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        4/5
+                    </p>
+                    <div class="category-price">
+                        <h2>$212</h2>
+                        <h2>$242</h2>
+                        <p>-20%</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img loading="lazy" src="/Images/Polo with Tipping Details.png">
+                    <h3>Polo with Tipping Detail</h3>
+                    <p>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        4.5/5
+                    </p>
+                    <div class="category-price">
+                        <h2>$200</h2>
+                        <h2>$250</h2>
+                        <p>-20%</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img loading="lazy" src="/Images/Black Striped T-shirt.png">
+                    <h3>Black Striped T-shirt</h3>
+                    <p>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        4/5
+                    </p>
+                    <div class="category-price">
+                        <h2>$120</h2>
+                        <h2>$150</h2>
+                        <p>-30%</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img loading="lazy" src="/Images/SKINNY FIT JEANS.png">
+                    <h3>Skinny Fit Jeans</h3>
+                    <p>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        4/5
+                    </p>
+                    <div class="category-price">
+                        <h2>$200</h2>
+                        <h2>$400</h2>
+                        <p>-50%</p>
+                    </div>
+                </div>
+                <div class="category-card for-hide">
+                    <img loading="lazy" src="/Images/CHECKERED SHIRT.png">
+                    <h3>Checkered Shirt</h3>
+                    <p>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        4.5/5
+                    </p>
+                    <div class="category-price">
+                        <h2>$212</h2>
+                    </div>
+                </div>
+                <div class="category-card for-hide">
+                    <img loading="lazy" src="/Images/Sleeve Striped T-shirt.png">
+                    <h3>Sleeve Striped T-shirt</h3>
+                    <p>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        4/5
+                    </p>
+                    <div class="category-price">
+                        <h2>$150</h2>
+                        <h2>$200</h2>
+                        <p>-25%</p>
+                    </div>
+                </div>
+                <div class="category-card for-hide">
+                    <img loading="lazy" src="/Images/vertival striped shirt.png">
+                    <h3> Vertical Striped Shirt</h3>
+                    <p>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        5/5
+                    </p>
+                    <div class="category-price">
+                        <h2>$212</h2>
+                        <h2>$242</h2>
+                        <p>-20%</p>
+                    </div>
+                </div>
+                <div class="category-card for-hide">
+                    <img loading="lazy" src="/Images/LOOSE FIT BERMUDA SHORTS.png">
+                    <h3>Loose Bermuda Short</h3>
+                    <p>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        4/5
+                    </p>
+                    <div class="category-price">
+                        <h2>$90</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-process-btns">
+                <button><i class='bx bx-left-arrow-alt'></i><p>Previous</p></button>
+                <div class="count-numbers">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>...</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                </div>
+                <button><p>Next</p> <i class='bx bx-right-arrow-alt'></i></button>
+            </div>
+
+            <div class="filter-container">
+                <div class="filter-title">
+                    <h2>Filters</h2>
+                    <span class="material-symbols-outlined" onclick="hidefilter()">
+                        instant_mix
+                    </span>
+                </div>
+                <div class="filter-category-name">
+                    <h3><p>T-shirt</p> <i class='bx bx-chevron-right'></i></h3>
+                    <h3><p>Shorts</p> <i class='bx bx-chevron-right'></i></h3>
+                    <h3><p>Shirt</p> <i class='bx bx-chevron-right'></i></h3>
+                    <h3><p>Hoodie</p> <i class='bx bx-chevron-right'></i></h3>
+                    <h3><p>Jeans</p> <i class='bx bx-chevron-right'></i></h3>
+                </div>
+                <div class="filter-price">
+                    <h2><p>Price</p><i class='bx bx-chevron-up' ></i></h2>
+                    <input type="range" min="0" max="500" value="200">
+                    <h3 class="price">$200</h3>
+                </div>
+                <div class="filter-colors">
+                    <h2><p>Colors</p> <i class='bx bx-chevron-up' ></i></h2>
+                    <div class="filter-select-color">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div><i class='bx bx-check' ></i></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="filter-size">
+                    <h2><p>Size</p><i class='bx bx-chevron-up' ></i></h2>
+                    <div class="filter-select-size">
+                        <div>XX-Small</div>
+                        <div>X-Small</div>
+                        <div>Small</div>
+                        <div>Medium</div>
+                        <div>Large</div>
+                        <div>X-Large</div>
+                        <div>XX-Large</div>
+                        <div>3X-Large</div>
+                    </div>
+                </div>
+                <div class="filter-style">
+                    <h2><p>Dress Style</p><i class='bx bx-chevron-up' ></i></h2>
+                    <div class="filter-select-style">
+                        <h3><p>Casual</p> <i class='bx bx-chevron-right'></i></h3>
+                        <h3><p>Formal</p> <i class='bx bx-chevron-right'></i></h3>
+                        <h3><p>Party</p> <i class='bx bx-chevron-right'></i></h3>
+                        <h3><p>Gym</p> <i class='bx bx-chevron-right'></i></h3>
+                    </div>
+                </div>
+                <div class="filter-apply-btn">
+                    <button>Apply Filter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- category casual section end -->
+
+
+    <!-- footer and newletter section start -->
+    <div class="news-letter-container">
+        <div class="news-letter-main">
+            <h1>
+                STAY UPTO DATE ABOUT OUR LATEST OFFERS
+            </h1>
+            <div class="news-details">
+                <div class="input-news">
+                    <input type="email" placeholder="Enter your Email">
+                    <i class='bx bx-envelope'></i>
+                </div>
+                <button class="Subscribe-btn">Subscribe to Newsletter</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="main-footer">
+            <!-- left footer -->
+            <div class="left-footer">
+                <a href="#StudySync" class="left-footer-icon">
+                    <span>SHOP.CO</span>
+                </a>
+                <div class="left-footer-info">
+                    We have clothes that suits your style and which you’re proud to wear. From women to men.
+                </div>
+                <div class="footer-logo">
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-github'></i>
+                </div>
+            </div>
+
+            <!-- right footer -->
+            <div class="right-footer">
+                <!-- column 1 -->
+                 <div class="footer-column">
+                    <h3 class="footer-column-heading">
+                       COMPANY
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#" class="footer-column-property">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-column-property">Features</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-column-property">Works</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-column-property">Career</a>
+                        </li>
+                    </ul>
+                 </div>
+                <!-- column 2 -->
+                <div class="footer-column">
+                    <h3  class="footer-column-heading">
+                        HELP
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#" class="footer-column-property"> Customer Support</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-column-property">Delivery Details</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-column-property">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-column-property">Privacy Policy</a>
+                        </li>
+                    </ul>
+                 </div>
+                <!-- column 3 -->
+                <div class="footer-column">
+                    <h3  class="footer-column-heading">
+                        FAQ
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#" class="footer-column-property"> Account</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-column-property">Manage Deliveries</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-column-property">Orders</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-column-property">Payments</a>
+                        </li>
+                    </ul>
+                 </div>
+                <!-- column 4 -->
+                <div class="footer-column">
+                    <h3  class="footer-column-heading">
+                        RESOURCES
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#" class="footer-column-property"> Free eBooks</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-column-property"> Development Tutorial</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-column-property">How to - Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-column-property"> Youtube Playlist</a>
+                        </li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+
+        <div class="copyright-footer">
+            <div class="left-copyright">
+                &copy; 2021 - Present StudySync. All rights reserved.
+            </div>
+            <div class="right_pay_logo">
+                <div class="logo_box">
+                    <img loading="lazy" src="images/visa.png" alt="visa">
+                </div>
+                <div class="logo_box">
+                    <img loading="lazy" src="images/masterpay.png" alt="masterpay">
+                </div>
+                <div class="logo_box">
+                    <img loading="lazy" src="images/paypal.png" alt="paypal">
+                </div>
+                <div class="logo_box">
+                    <img loading="lazy" src="images/applepay.png" alt="applepay">
+                </div>
+                <div class="logo_box">
+                    <img loading="lazy" src="images/googlepay.png" alt="googlepay">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- footer and newletter section end -->
+
+
+    <script src="product_category.js"></script>
+</body>
+</html>
